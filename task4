@@ -1,0 +1,34 @@
+using System;
+
+namespace lesson3task4
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            string[,] myArray = new string[,]
+            {
+                {"X","O","O","X","X","X","O","O","O","O"},
+                {"X","X","X","O","O","O","O","O","O","X"},
+                {"O","O","O","X","O","O","O","O","O","O"},
+                {"O","O","X","X","O","O","O","O","O","O"},
+                {"O","O","O","O","O","O","O","O","X","O"},
+                {"O","X","O","O","O","O","O","O","O","O"},
+                {"O","X","O","X","X","O","O","O","O","O"},
+                {"O","O","O","O","O","O","O","X","X","O"},
+                {"O","O","X","O","O","O","O","O","O","O"},
+                {"O","O","O","O","O","X","O","O","O","O"},
+            };
+            int height = myArray.GetLength(0);
+            int weight = myArray.GetLength(1);
+            for (int y = 0; y < height; y++)
+            {
+                for (int x = 0; x < weight; x++)
+                {
+                    Console.Write(myArray[y, x]+ " ");
+                }
+                Console.WriteLine();
+            }
+        }
+    }
+}
