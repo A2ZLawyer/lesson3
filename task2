@@ -1,0 +1,25 @@
+using System;
+
+namespace lesson3task2
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            string[,] myArray = new string[,]
+            {
+                {"Иванов Иван", "+7911-111-11-11"},
+                {"Иванов Петр", "+7922-222-22-22"},
+                {"Иванов Сидор", "+7933-333-33-33"},
+                {"Иванов Федот", "+7944-444-44-44"},
+                {"Иванов Матвей", "+7955-555-55-55"},
+            };
+            for (int y = 0; y < myArray.GetLength(0); y++)
+                for (int x = 0; x < myArray.GetLength(1); x++)
+                {
+                    Console.WriteLine(myArray[y, x]);
+                }
+
+        }
+        }
+    }

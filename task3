@@ -1,0 +1,15 @@
+using System;
+
+namespace lesson3task3
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            string word = "Hello";
+            char[] reverceword = word.ToCharArray();
+            Array.Reverse(reverceword);
+            Console.WriteLine(reverceword);
+        }
+    }
+}
